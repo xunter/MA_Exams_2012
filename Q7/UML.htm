@@ -1,0 +1,1361 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0094)http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm -->
+<HTML><HEAD>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type><LINK 
+rel=stylesheet type=text/css href="UML_files/PIS.css">
+<META name=GENERATOR content="MSHTML 9.00.8112.16446"></HEAD>
+<BODY lang=RU>
+<H1>11. ОСНОВЫ УНИФИЦИРОВАННОГО ЯЗЫКА МОДЕЛИРОВАНИЯ</H1>
+<H2>&nbsp;</H2>
+<H2><A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#11_1">11.1. 
+Структура Унифицированного языка моделирования</A></H2>
+<H2><A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#11_2">11.2. 
+Семантика и синтаксис UML</A></H2>
+<H2><A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#11_3">11.3. 
+Нотация&nbsp; UML</A></H2>
+<H2><A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#question">Вопросы 
+для самопроверки</A></H2>
+<H2>&nbsp;</H2>
+<H2>&nbsp;</H2>
+<H1><A name=11_1></A>11.1. Структура Унифицированного языка моделирования</H1>
+<H2>&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN 
+style="COLOR: black"><B><I>Унифицированный язык моделирования</I></B> (UML) в 
+настоящий момент является стандартом де-факто при описании (документирования) 
+результатов проектирования и разработки объектно-ориентированных систем. 
+Последнюю официальную спецификацию языка можно найти на сайте <A 
+href="http://www.omg.org/">http://www.omg.org/</A>. </SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">Общая структура UML 
+показана на рис. 11.1 [<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit23">23</A>–<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit25">25</A>].</SPAN></H2>
+<H3 style="MARGIN-LEFT: 0px"><IMG border=0 src="UML_files/UML_Structura.png" 
+width=610 height=238></H3>
+<H3 style="MARGIN-LEFT: 0px">Рис. 11.1. Структура UML</H3>
+<H2>&nbsp;</H2>
+<H2>&nbsp;</H2>
+<H1><A name=11_2></A>11.2. Семантика и синтаксис UML</H1>
+<H2>&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN 
+style="COLOR: black"><I><B>Семантика</B></I> – раздел языкознания, изучающий 
+значение единиц языка, прежде всего его слов и словосочетаний [<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit35">35</A>]. 
+</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN 
+style="COLOR: black"><B><I>Синтаксис</I></B> – способы соединения слов и их форм 
+в словосочетания и предложения, соединения предложений в сложные предложения, 
+способы создания высказываний как части текста [<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit35">35</A>].</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">Таким образом, 
+применительно к UML, семантика и синтаксис определяют стиль изложения 
+(построения моделей), который объединяет естественный и формальный языки для 
+представления базовых понятий (элементов модели) и механизмов их 
+расширения.</SPAN></H2>
+<H2>&nbsp;</H2>
+<H2>&nbsp;</H2>
+<H1><A name=11_3></A>11.3. Нотация&nbsp; UML</H1>
+<H2>&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">Нотация представляет 
+собой графическую интерпретацию семантики для ее визуального представления. 
+</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black"><A name=Entity></A>В 
+UML определено три <B><I>типа сущностей</I></B>:</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">структурная – абстракция, являющаяся отражением 
+концептуального или физического объекта;</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">группирующая – элемент, используемый для некоторого 
+смыслового объединения элементов диаграммы;</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">поясняющая (аннотационная) – комментарий к элементу 
+диаграммы.</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">В табл. 11.1 
+приведено краткое описание сущностей, используемых в графической 
+нотации.</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%"><SPAN 
+style="COLOR: black">Таблица 11.1. Сущности </SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<DIV align=center>
+<TABLE 
+style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-INDENT: 0px; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 10px; BORDER-TOP: medium none; MARGIN-RIGHT: 10px; BORDER-RIGHT: medium none" 
+id=table1 class=MsoTableGrid border=1 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR style="HEIGHT: 26.25pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Тип</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Наименование</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Обозначение</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Определение (семантика)</H2></TD></TR>
+  <TR style="HEIGHT: 95.8pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=9>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Структурная</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Класс </H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(class)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_Class.png" width=105 
+      height=130></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Множество объектов, имеющих общую структуру и 
+  поведение</H2></TD></TR>
+  <TR style="HEIGHT: 98.95pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Объект</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(object)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_Object.png" width=106 
+      height=131></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left><SPAN style="TEXT-TRANSFORM: uppercase">а</SPAN>бстракция 
+      реальной или воображаемой сущности с четко выраженными концептуальными 
+      границами, индивидуальностью (идентичностью), состоянием и поведением. С 
+      точки зрения UML объекты являются экземплярами класса (экземплярами 
+      сущности)</H2></TD></TR>
+  <TR style="HEIGHT: 45.35pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><SPAN style="TEXT-TRANSFORM: uppercase">и</SPAN>нтерфейс</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(interface)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_Interface.png" width=31 
+      height=30></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>iРасчет </H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left><SPAN style="TEXT-TRANSFORM: uppercase">с</SPAN>овокупность 
+      операций, определяющая сервис (набор услуг), предоставляемый классом или 
+      компонентом</H2></TD></TR>
+  <TR style="HEIGHT: 80.75pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><SPAN style="TEXT-TRANSFORM: uppercase">а</SPAN>ктер</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(actor)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_Actor.png" width=35 
+      height=79></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Инженер</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>службы пути</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left><SPAN 
+      style="TEXT-TRANSFORM: uppercase; LETTER-SPACING: -0.3pt">в</SPAN><SPAN 
+      style="LETTER-SPACING: -0.3pt">нешняя по отношению к системе сущность, 
+      которая взаимодействует с системой и использует ее функциональные 
+      возможности для достижения определенных целей или решения частных задач. 
+      Таким образом актер – это внешний источник или приемник 
+      информации</SPAN></H2></TD></TR>
+  <TR style="HEIGHT: 57.6pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><SPAN style="TEXT-TRANSFORM: uppercase">в</SPAN>ариант 
+      использования</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(use case)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_UseCase.png" width=117 
+      height=84></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left><SPAN style="TEXT-TRANSFORM: uppercase">о</SPAN>писание 
+      последовательности выполняемых системой действий, которая приводит к 
+      значимому для актера результату</H2></TD></TR>
+  <TR style="HEIGHT: 54.8pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><SPAN style="TEXT-TRANSFORM: uppercase">с</SPAN>остояние</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(state)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_State.png" width=106 
+      height=42></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53 vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left><SPAN style="TEXT-TRANSFORM: uppercase">о</SPAN>писание момента 
+      в ходе жизни сущности, когда она удовлетворяет некоторому условию, 
+      выполняет некоторую деятельность или ждет наступления некоторого 
+      события</H2></TD></TR>
+  <TR style="HEIGHT: 57.6pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=95>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><SPAN style="TEXT-TRANSFORM: uppercase"><A 
+      name=Coloboration></A>к</SPAN>ооперация</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(collaboration)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=95>
+      <H2 
+      style="TEXT-ALIGN: center; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_Collaboration.png" width=121 
+      height=86></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=95 vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left><SPAN style="TEXT-TRANSFORM: uppercase">о</SPAN>писание 
+      совокупности экземпляров актеров, объектов и их взаимодействия в процессе 
+      решения некоторой задачи</H2></TD></TR>
+  <TR style="HEIGHT: 57.6pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=76>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><SPAN style="TEXT-TRANSFORM: uppercase">к</SPAN>омпонент</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(component)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=76>
+      <H2 
+      style="TEXT-ALIGN: center; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_Component.png" width=114 
+      height=67></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=76 vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left><SPAN style="TEXT-TRANSFORM: uppercase">ф</SPAN>изическая часть 
+      системы (файл), в том числе модули системы, обеспечивающие реализацию 
+      согласованного набора интерфейсов</H2></TD></TR>
+  <TR style="HEIGHT: 57.6pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=65>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><SPAN style="TEXT-TRANSFORM: uppercase">у</SPAN>зел </H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(node)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=65>
+      <H2 style="TEXT-ALIGN: center; TEXT-INDENT: 0px; MARGIN: 4px 0px"><IMG 
+      border=0 src="UML_files/UML_Node.png" width=105 height=56></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=65 vAlign=top>
+      <H2 style="TEXT-INDENT: 0px; MARGIN: 4px 0px"><SPAN 
+      style="TEXT-TRANSFORM: uppercase">ф</SPAN>изическая часть системы 
+      (компьютер, принтер и т. д.), предоставляющая ресурсы для решения 
+      задачи</H2></TD></TR>
+  <TR style="HEIGHT: 57.6pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=73>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Группирующая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=73>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Пакет</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(packages)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=73>
+      <H2 style="TEXT-ALIGN: center; TEXT-INDENT: 0px; MARGIN: 4px 0px"><IMG 
+      border=0 src="UML_files/UML_Package.png" width=94 height=55></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=73 vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Общий механизм группировки элементов.</H2>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>В отличие от компонента, пакет – чисто концептуальное 
+      (абстрактное) понятие. Частными случаями пакета являются система и 
+      модель</H2></TD></TR>
+  <TR style="HEIGHT: 57.6pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=72>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Поясняющая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=72>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Примечание</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(comment)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=72>
+      <H2 style="TEXT-ALIGN: center; TEXT-INDENT: 0px; MARGIN: 4px 0px"><IMG 
+      border=0 src="UML_files/UML_Comment.png" width=104 height=71></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=72 vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Комментарий к элементу</H2></TD></TR></TBODY></TABLE></DIV>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">В некоторых 
+источниках, в частности [<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit24">24</A>, 
+<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit29">29</A>], 
+выделяют также поведенческие сущности <I>взаимодействия</I> и <I>конечные 
+автоматы</I>, но с логической точки зрения их следует отнести к 
+диаграммам.</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black"><A name=RS></A>В 
+табл. 11.2 приведено описание всех видов <B><I>отношений</I></B> UML, 
+используемых на диаграммах для указания связей между сущностями.</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%"><SPAN 
+style="COLOR: black">Таблица 11.2. Отношения</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<DIV align=center>
+<TABLE 
+style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-INDENT: 0px; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 10px; BORDER-TOP: medium none; MARGIN-RIGHT: 10px; BORDER-RIGHT: medium none" 
+id=table2 class=MsoTableGrid border=1 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Наименование</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Обозначение</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Определение (семантика)</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Ассоциация (association)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 
+      src="UML_files/UML_Relationship_Association.png" width=121 
+    height=45></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Отношение, описывающее значимую связь между двумя и более 
+      сущностями. Наиболее общий вид отношения</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Агрегация (aggregation)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 
+      src="UML_files/UML_Relationship_Aggregation.png" width=120 
+    height=37></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Подвид ассоциации, описывающей связь «часть»–«целое», в котором 
+      «часть» может существовать отдельно от «целого». Ромб указывается со 
+      стороны «целого». Отношение указывается только между сущностями одного 
+      типа</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Композиция (composition)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 
+      src="UML_files/UML_Relationship_Composition.png" width=119 
+    height=36></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Подвид агрегации, в которой «части» не могут существовать 
+      отдельно от «целого». Как правило,&nbsp; «части» создаются и уничтожаются 
+      одновременно с «целым»</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Зависимость (dependency)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 src="UML_files/UML_Relationship_Dependency.png" 
+      width=118 height=30></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Отношение между двумя сущностями, в котором изменение в одной 
+      сущности (независимой) может влиять на состояние или поведение другой 
+      сущности (зависимой). Со стороны стрелки указывается независимая 
+      сущность</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Обобщение (generalization)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 
+      src="UML_files/UML_Relationship_Generalization.png" width=101 
+      height=18></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Отношение между обобщенной сущностью (предком, родителем) и 
+      специализированной сущностью (потомком, дочкой). Треугольник указывается 
+      со стороны родителя. Отношение указывается только между сущностями одного 
+      типа</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Реализация (realization)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><IMG border=0 
+      src="UML_files/UML_Relationship_Realization.png" width=126 
+    height=31></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=left>Отношение между сущностями, где одна сущность определяет 
+      действие, которое другая сущность обязуется выполнить. Отношения 
+      используются в двух случаях: между интерфейсами и классами (или 
+      компонентами), между вариантами использования и кооперациями. Со стороны 
+      стрелки указывается сущность, определяющее действие (интерфейс или вариант 
+      использования) </H2></TD></TR></TBODY></TABLE></DIV>
+<H2 style="LINE-HEIGHT: 101%">&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">Для ассоциации, 
+агрегации и композиции может указываться <B><I>кратность</I></B> (англ. 
+multiplicity), характеризующая общее количество экземпляров сущностей, 
+участвующих в отношении. Она, как правило, указывается с каждой стороны 
+отношения около соответствующей сущности. Кратность может указываться следующими 
+способами:</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">* – любое количество экземпляров, в том числе и ни 
+одного;</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">целое неотрицательное число – кратность строго фиксирована 
+и равна указанному числу (например: 1, 2 или 5);</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">диапазон целых неотрицательных чисел «первое число .. 
+второе число» (например: 1..5, 2..10 или 0..5);</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">диапазон чисел от конкретного начального значения до 
+произвольного конечного «первое число .. *» (например: 1..*, 5..* или 
+0..*);</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="FONT-FAMILY: Symbol">·</SPAN><SPAN 
+style="FONT-FAMILY: Times New Roman; FONT-SIZE: 7pt">&nbsp;</SPAN><SPAN 
+style="COLOR: black">перечисление целых неотрицательных чисел и диапазонов через 
+запятую (например: 1, 3..5, 10, 15..*).</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">Если кратность не 
+указана, то принимается ее значение, равное 1. Кратность экземпляров сущностей, 
+участвующих в зависимости, обобщении и реализации, всегда принимается равной 
+1.</SPAN></H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black"><A name=MR></A>В 
+табл. 11.3 приведено описание <B><I>механизмов расширения</I></B>, применяемых 
+для уточнения семантики сущностей и отношений. В общем случае, механизм 
+расширения представляет собой строку текста, заключенную в скобки или 
+кавычки.</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%"><SPAN 
+style="COLOR: black">Таблица 11.3. Механизмы расширения</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<DIV align=center>
+<TABLE 
+style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-INDENT: 0px; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 10px; BORDER-TOP: medium none; MARGIN-RIGHT: 10px; BORDER-RIGHT: medium none" 
+id=table4 class=MsoTableGrid border=1 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR style="HEIGHT: 19pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Наименование</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Обозначение</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Определение (семантика)</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Стереотип</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(stereotype)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>« »</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Обозначение, уточняющее семантику элемента нотации (например: 
+      зависимость со стереотипом «include» рассматривается, как отношение 
+      включения, а класс со стереотипом «boundary» – граничный класс)</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Сторожевое условие</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(guard condition)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>[&nbsp; ]</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Логическое условие (например: [A &gt; B] или [идентификация 
+      выполнена])</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Ограничение</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;(constraint)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>{&nbsp; }</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Правило, ограничивающее семантику элемента модели (например, 
+      {время выполнения менее 10 мс})</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Помеченное значение </H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(tagged value)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>{&nbsp; }</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Новое или уточняющее свойство элемента нотации (например: 
+      {version = 3.2})</H2></TD></TR></TBODY></TABLE></DIV>
+<H2 style="LINE-HEIGHT: 101%">&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black"><A 
+name=VariantStereotips></A>Помимо стереотипов, указываемых в виде строки текста 
+в кавычках, на диаграммах могут использоваться графические стереотипы. На рис. 
+11.2 приведены примеры стандартного и стереотипного отображения класса-сущности 
+(см. подраздел 6).</SPAN></H2>
+<H3 style="MARGIN-LEFT: 0px"><IMG border=0 
+src="UML_files/UML_StereotipClass.png" width=509 height=119></H3>
+<H3 style="MARGIN-LEFT: 0px">Рис. 12. Примеры стандартного и стереотипного 
+отображения класса:</H3>
+<H3 style="MARGIN-LEFT: 0px">a – стандартное обозначение; б – стандартное 
+обозначение с текстовым стереотипом; в – графический стереотип </H3>
+<H3 style="MARGIN-LEFT: 0px">&nbsp;</H3>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black"><I><B><A 
+name=Diagram></A>Диаграмма</B></I> представляет собой группировку элементов 
+нотации для отображения некоторого аспекта разрабатываемой информационной 
+системы. Диаграммы представляют собой, как правило, связный граф, в котором 
+сущности являются вершинами, а отношения – дугами. В следующей таблице дана 
+краткая характеристика диаграмм UML [<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit23">23</A>–<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M11/Literatura.htm#lit26">26</A>]. 
+</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%"><SPAN 
+style="COLOR: black">Таблица 11.4. Диаграммы</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<DIV align=center>
+<TABLE 
+style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-INDENT: 0px; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 10px; BORDER-TOP: medium none; MARGIN-RIGHT: 10px; BORDER-RIGHT: medium none" 
+id=table9 class=MsoNormalTable border=1 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2 colSpan=3>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Диаграмма</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Назначение</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    colSpan=3>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M1/L4.htm#4_4">Тип 
+      диаграммы (модели ИС)</A></H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>по степени физической реализации</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>по отображению динамики</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>по отображаемому аспекту</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    colSpan=3>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L12.htm#12_2">Вариантов 
+      использования</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(use case)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Отображает функции системы, взаимодействие между актерами и 
+      функциями</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Логическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Статическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Функциональная</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    colSpan=3>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L16.htm#16_2">Классов</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(class)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Отображает набор классов, интерфейсов и отношений между ними 
+      </H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Логическая или</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>физическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Статическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Функционально-информационная</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=4>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Поведения</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(behavior)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    colSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L13.htm#13_2">Состояний</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(statechart)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Отображает состояния сущности и переходы между ними в 
+      процессе ее жизненного цикла</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=4>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Логическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=4>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Динамическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=4>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Поведенческая</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    colSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L17.htm#17_1">Деятельности</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(activity)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Отображает бизнес-процессы в системе (описание алгоритмов 
+      поведения)</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Взаимодействия</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(interaction)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L15.htm#15_3">Последова-тельности</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(sequence)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Отображает последовательность передачи сообщений между 
+      объектами и актерами</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L15.htm#15_2">Кооперации</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(collaboration)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Аналогична диаграмме последовательности, но основной акцент 
+      делается на структуру взаимодействия между объектами</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Реализации</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(implementation)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    colSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M10/L18.htm#18_2">Компонентов</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(component)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Отображает компоненты системы (программы, библиотеки, таблицы 
+      и т. д.) и связи между ними</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Физическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Статическая</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Компонентная</H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(структурная)</H2></TD></TR>
+  <TR style="HEIGHT: 85.15pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53 colSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M10/L18.htm#18_4">Развертывания</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>(deployment)</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53 vAlign=top>
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Отображает размещение компонентов по узлам сети, а также ее 
+      конфигурацию</H2></TD></TR></TBODY></TABLE></DIV>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt"><SPAN style="COLOR: black">При разработке 
+отдельной модели системы в <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L10.%20UP.%20Structura.htm">Унифицированном 
+процессе</A> строят несколько видов диаграмм. Более того, при разработке модели 
+сложной системы, как правило, строят несколько диаграмм одного и того же вида. В 
+то же время можно не создавать отдельные виды диаграмм, если в этом нет 
+необходимости. Например, диаграммы <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L15.%20Interaction.%20SostavDiagramSequence.htm">последовательности</A> 
+и <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L15.%20Interaction.%20SostavDiagramCollobaration.htm">кооперации</A> 
+являются взаимозаменяемыми, <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L13.%20State.%20SostavDiagram.htm">диаграммы 
+состояний</A> строятся только для объектов, обладающих сложным поведением. В 
+табл. 6 приведены рекомендации о необходимости разработки (уточнении) диаграмм 
+по моделям системы.</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%"><SPAN 
+style="COLOR: black"></SPAN>&nbsp;</H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%"><SPAN 
+style="COLOR: black">Таблица 11.5. Связь моделей и диаграмм</SPAN></H2>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<DIV align=center>
+<TABLE 
+style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-INDENT: 0px; BORDER-COLLAPSE: collapse; MARGIN-LEFT: 10px; BORDER-TOP: medium none; MARGIN-RIGHT: 10px; BORDER-RIGHT: medium none" 
+id=table10 class=MsoTableGrid border=1 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    rowSpan=2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Модель</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    colSpan=8>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>Диаграмма</H2></TD></TR>
+  <TR style="PAGE-BREAK-INSIDE: avoid; HEIGHT: 70.7pt">
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L12.htm#12_2">Вариантов</A></H2>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L12.htm#12_2">использования</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L13.htm#13_2">Состояний</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L16.htm#16_2">Классов</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L15.htm#15_2">Кооперации</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L15.htm#15_3">Последовательности</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L17.htm#17_1">Деятельности</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M10/L18.htm#18_2">Компонентов</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm" 
+    height=53>
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M10/L18.htm#18_4">Развертывания</A></H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L12.htm#12_1">Вариантов 
+      использования</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L14.htm#14_1">Анализа</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L16.htm#16_1">Проектирования</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD></TR>
+  <TR>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: windowtext 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center><A 
+      href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M10/L18.htm#18_1">Реализации</A></H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>&nbsp;</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD>
+    <TD 
+    style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 2.85pt; PADDING-RIGHT: 2.85pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0cm">
+      <H2 
+      style="TEXT-ALIGN: center; LINE-HEIGHT: normal; TEXT-INDENT: 0px; MARGIN: 4px 0px; TEXT-AUTOSPACE: " 
+      align=center>+</H2></TD></TR></TBODY></TABLE></DIV>
+<H2 style="TEXT-ALIGN: center; LINE-HEIGHT: 100%">&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt">В табл. 6 не приведена модель тестирования, так 
+как в рамках ее построения диаграммы не разрабатываются, а проверяются 
+(тестируются) на полноту и непротиворечивость.</H2>
+<H2 style="TEXT-INDENT: 21.25pt">Часть диаграмм после их построения требует 
+развития и уточнения в рамках разработки следующей модели (технологического 
+процесса). Так, например, <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L12.htm#12_2">диаграммы 
+вариантов использования</A> должны быть уточнены при разработке <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L14.htm#14_1">модели 
+анализа</A>. В моделях <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M7/L12.htm#12_1">вариантов 
+использования</A> и <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L14.htm#14_1">анализа</A> 
+разрабатывается и уточняется <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L14.htm#14_2">диаграмма 
+классов анализа</A><SUP>1</SUP>, а в <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L16.htm#16_1">модели 
+проектирования</A> – итоговая детализированная <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L16.htm#16_2">диаграмма 
+классов</A>. Как правило, <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M8/L14.htm#14_2">диаграмма 
+классов анализа</A> и <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M9/L16.htm#16_2">диаграмма 
+классов</A> существуют независимо.</H2>
+<HR>
+
+<H2 style="TEXT-INDENT: 21.25pt"><SUP>1</SUP>Класс анализа – укрупненный класс, 
+который требует дальнейшей детализации и декомпозиции на несколько более мелких 
+классов.</H2>
+<H2>&nbsp;</H2>
+<H2>&nbsp;</H2>
+<H1><A name=question></A>Вопросы для самопроверки</H1>
+<H2>&nbsp;</H2>
+<H2 style="TEXT-INDENT: 21.25pt; TEXT-AUTOSPACE: ; MARGIN-LEFT: 0cm">1. <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#Entity">Назовите 
+типы сущностей и дайте их краткую характеристику</A>.</H2>
+<H2 style="TEXT-INDENT: 21.25pt; TEXT-AUTOSPACE: ; MARGIN-LEFT: 0cm">2. <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#Entity">Перечислите 
+структурные сущности</A>.</H2>
+<H2 style="TEXT-INDENT: 21.25pt; TEXT-AUTOSPACE: ; MARGIN-LEFT: 0cm">3. <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#RS">Перечислите 
+виды отношений</A>.</H2>
+<H2 style="TEXT-INDENT: 21.25pt; TEXT-AUTOSPACE: ; MARGIN-LEFT: 0cm">4. Дайте 
+определение понятиям «<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#MR">стереотип</A>» 
+и «<A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#MR">сторожевое 
+условие</A>».</H2>
+<H2 style="TEXT-INDENT: 21.25pt; TEXT-AUTOSPACE: ; MARGIN-LEFT: 0cm">5. <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#VariantStereotips">Назовите 
+варианты отображения стереотипов</A>.</H2>
+<H2 style="TEXT-INDENT: 21.25pt; TEXT-AUTOSPACE: ; MARGIN-LEFT: 0cm">6. <A 
+href="http://edu.dvgups.ru/METDOC/GDTRAN/YAT/ITIS/PROEK_INF_SIS/METOD/UMK_DO/frame/UMK_DO/M6/L11.htm#Diagram">Перечислите 
+виды диаграмм UML и дайте их краткую характеристику</A>.</H2></BODY></HTML>
